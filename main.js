@@ -8,21 +8,39 @@ client.once('ready', () => {
     console.log('Femboy is online!');
 });
 
+client.on('messageDelete', async message => {
+	
+	if (!message.guild) return;
+	const fetchedLogs = await message.guild.fetchAuditLogs({
+		limit: 1,
+		type: 'MESSAGE_DELETE',
+	});
+	
+	const deletionLog = fetchedLogs.entries.first();
+
+	if (!deletionLog) return console.log(`A message by ${message.author.tag} was deleted, but no relevant audit logs were found.`);
+
+	const { executor, target } = deletionLog;
+
+	if (target.id === message.author.id) {
+		console.log(`A message by ${message.author.tag} was deleted by ${executor.tag}.`);
+	} else {
+		console.log(`A message by ${message.author.tag} was deleted, but we don't know by who.`);
+	}
+});
+
+
 client.on('message', message =>{
+
     if(!message.content.startsWith(prefix) || message.author.bot) return;
 
     const args = message.content.slice(prefix.length).split(/ +/);
     const command = args.shift().toLowerCase();
 
-if(message.content.includes('woman')){
-    message.channel.send("<@816431513792675860>");
-} if(message.content.includes('Woman')){
-    message.channel.send("<@816431513792675860>");
-} if(message.content.includes('WOMAN')){
-    message.channel.send("<@816431513792675860>");
+
+if(command === 'woman'){
+    return message.reply("certified woman moment")
 }
-
-
 if(command === 'hi'){
     message.reply('kys')
 } if(command === 'hello'){
@@ -58,6 +76,7 @@ if(command === 'hi'){
     } if(command === 'owo.'){
         message.channel.send('kys');
     } if(command === 't-t'){
+        message.delete(1)
         message.channel.send('kys');
     } if(command === 'tvt'){
         message.channel.send('kys');
