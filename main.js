@@ -76,7 +76,6 @@ if(command === 'hi'){
     } if(command === 'owo.'){
         message.channel.send('kys');
     } if(command === 't-t'){
-        message.delete(1)
         message.channel.send('kys');
     } if(command === 'tvt'){
         message.channel.send('kys');
