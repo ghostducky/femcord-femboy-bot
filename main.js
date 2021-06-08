@@ -24,7 +24,7 @@ client.on('message', message => {
 
     //Here we declare everything thats "kyssable" meaning everything the bot replies "kys" to is stored here. And we can reference this variable at any point, with something like kysvar[0] to get owo and kysvar[1] to get uwu. Very simple variable declaring which is useful in many cases :)
     //When you're adding something here, make sure to type it in lowercase, otherwise it will be no function!!!!!!!!!
-    let kysvar = ['owo', 'uwu', 'qwq', 'hello', 'hey', 'kys', 't-t', 'ovo', '"owo"', 'cunt', 'retard', 'uwu~']
+    let kysvar = ['owo', 'uwu', 'qwq', 'hello', 'kys', 't-t', 'ovo', '"owo"', 'cunt', 'retard']
 
     //Sanity check.
     console.log(lowmsg)
@@ -32,7 +32,7 @@ client.on('message', message => {
     //Check if anything in the message is in kysvar, if so call the function kys()
     //Sidenote, there's probably a million other ways that are more efficient to do this, but I really could care less since this is just a discord bot.
     //And it works sooo. :P
-    if(lowmsg.includes(kysvar[0]) || lowmsg.includes(kysvar[1]) || lowmsg.includes(kysvar[2]) || lowmsg.includes(kysvar[3]) || lowmsg.includes(kysvar[4]) || lowmsg.includes(kysvar[5]) || lowmsg.includes(kysvar[6]) || lowmsg.includes(kysvar[7]) || lowmsg.includes(kysvar[8]) || lowmsg.includes(kysvar[9]) || lowmsg.includes(kysvar[10]) || lowmsg.includes(kysvar[11] || lowmsg.includes(kysvar[12]))){
+    if(lowmsg.includes(kysvar[0]) || lowmsg.includes(kysvar[1]) || lowmsg.includes(kysvar[2]) || lowmsg.includes(kysvar[3]) || lowmsg.includes(kysvar[4]) || lowmsg.includes(kysvar[5]) || lowmsg.includes(kysvar[6]) || lowmsg.includes(kysvar[7]) || lowmsg.includes(kysvar[8]) || lowmsg.includes(kysvar[9]) || lowmsg.includes(kysvar[10])){
         kys()
     }
 
