@@ -1,0 +1,159 @@
+const {Client, Attatchment} = require('discord.js');
+
+const client = new Client();
+
+const prefix = '';
+
+client.once('ready', () => {
+    console.log('Femboy is online!');
+});
+
+client.on('message', message =>{
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
+
+    const args = message.content.slice(prefix.length).split(/ +/);
+    const command = args.shift().toLowerCase();
+
+if(message.content.includes('woman')){
+    message.channel.send("<@816431513792675860>");
+} if(message.content.includes('Woman')){
+    message.channel.send("<@816431513792675860>");
+} if(message.content.includes('WOMAN')){
+    message.channel.send("<@816431513792675860>");
+}
+
+
+if(command === 'hi'){
+    message.reply('kys')
+} if(command === 'hello'){
+    message.reply('kys');
+} if(command === 'wassup'){
+    message.reply('no one wants to talk to you. kys <3');
+} if(message.content.includes('gg')){
+    message.reply('GUN GANGGGGGGG');
+} if(command === 'hey'){
+    message.reply('kys');
+} if(message.content.includes('!d bump')){
+    message.reply("if you bumped: thanks :heart: and if you didn't: kys");
+}
+
+ if(command === 'kys'){
+     message.reply('kys');
+    } if(command === 'qwq'){
+        message.channel.send('kys');
+    } if(command === 'T-T'){
+        message.channel.send('kys');
+    } if(command === 'ovo'){
+        message.channel.send('kys');
+    } if(command === 'ÚwÚ'){
+        message.channel.send('kys');
+    } if(command === 'uvu'){
+        message.channel.send('kys');
+    } if(command === 'uvu.'){
+        message.channel.send('kys');
+    } if(command === 'ovo.'){
+        message.channel.send('kys');
+    } if(command === 'uwu.'){
+        message.channel.send('kys');
+    } if(command === 'owo.'){
+        message.channel.send('kys');
+    } if(command === 't-t'){
+        message.channel.send('kys');
+    } if(command === 'tvt'){
+        message.channel.send('kys');
+    } if(command === '.owo'){
+        message.channel.send('kys');
+    } if(command === '.uwu'){
+        message.channel.send('kys');
+    } if(command === '.t-t'){
+        message.channel.send('kys');
+    } if(command === '.tvt'){
+        message.channel.send('kys');
+    } if(command === '"owo"'){
+        message.channel.send('kys');
+    } if(command === '~owo~'){
+        message.channel.send('kys');
+    } if(command === '~owo'){
+        message.channel.send('kys');
+    } if(command === 'owo~'){
+        message.channel.send('kys');
+    } if(command === '~uwu~'){
+        message.channel.send('kys');
+    } if(command === '~uwu'){
+        message.channel.send('kys');
+    } if(command === 'uwu~'){
+        message.channel.send('kys');
+    } if(command === '"uwu"'){
+        message.channel.send('kys');
+    } if(command === 'cunt'){
+        message.channel.send(`we know you are ${message.author.username} and don't forget to kys <3`);
+    } if(command === 'fuck'){
+        message.channel.send('fuck me daddy <3');
+    } if(command === 'no'){
+        message.channel.send('no');
+    } if(command === 'yes'){
+        message.channel.send('indeed');
+    } if(command === 'yeah'){
+        message.channel.send('agreed');  
+    } if(message.content.includes('furry')) {
+        message.channel.send('kys');
+    } if(message.content.includes('uwu')) {
+        message.channel.send('kys');
+    }  if(message.content.includes('Uwu')) {
+        message.channel.send('kys');
+    } if(message.content.includes('uwU')) {
+        message.channel.send('kys');
+    }  if(message.content.includes('UWU')) {
+        message.channel.send('kys');
+    } if(message.content.includes('owo')) {
+        message.channel.send('kys');
+    }  if(message.content.includes('Owo')) {
+        message.channel.send('kys');
+    } if(message.content.includes('owO')) {
+        message.channel.send('kys');
+    }  if(message.content.includes('OWO')) {
+        message.channel.send('kys');
+    } if(message.content.includes('sex')) {
+        message.reply('did you say sex? no one would fuck you lmao');
+    } if(message.content.includes('child')) {
+        message.reply('kids deserver to die');
+    } if(command === 'a!leaderboards'){
+        message.reply("it's `a!leaderboard`");
+    } if(message.content.includes('help')){
+        message.channel.send('help? no. :heart:');
+    } if(message.content.includes('xd')){
+        message.reply("I'll fuck your mom. will that be xd too?")
+    } if(message.content.includes('Xd')){
+        message.reply("I'll fuck your mom. will that be xd too?")
+    } if(message.content.includes('xD')){
+        message.reply("I'll fuck your mom. will that be xd too?")
+    } if(message.content.includes('XD')){
+        message.reply("I'll fuck your mom. will that be xd too?")
+    } if(message.content.includes('Finland')){
+        message.channel.send('FINLAND :muscle: :flag_fi:');
+    } if(message.content.includes('finland')){
+        message.channel.send('FINLAND :muscle: :flag_fi:');
+    } if(message.content.includes('Finnish')){
+        message.channel.send('FINLAND :muscle: :flag_fi:');
+    } if(message.content.includes('finnish')){
+        message.channel.send('FINLAND :muscle: :flag_fi:');
+    } if(command === 'retard'){
+        message.channel.send('yup. kys :heart:');
+    } if(message.content.includes('usa')){
+        message.reply(":flag_us: they should go to hell")
+    } if(message.content.includes('Usa')){
+        message.reply(":flag_us: they should go to hell")
+    } if(message.content.includes('USA')){
+        message.reply(":flag_us: they should go to hell")
+    } if(command === 'gay'){
+        message.channel.send("it's ok to be gay only if you like femboys")
+    }  if(message.content.includes('que')){
+        message.channel.send('que?');
+    } if(message.content.includes('Que')){
+        message.channel.send('que?');
+    } 
+
+});
+
+
+client.login('NzU3MjY4MTQ4NTc0NDg2NjU5.X2d66w.uyE3yrYeXYvNcTndNdRIEZjrPBM')

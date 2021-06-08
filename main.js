@@ -1,159 +1,79 @@
-const {Client, Attatchment} = require('discord.js');
+const {Client, Attatchment, MessageAttachment} = require('discord.js');
 
 const client = new Client();
-
-const prefix = '';
 
 client.once('ready', () => {
     console.log('Femboy is online!');
 });
 
-client.on('message', message =>{
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
+client.on('message', message => {
 
-    const args = message.content.slice(prefix.length).split(/ +/);
-    const command = args.shift().toLowerCase();
-
-if(message.content.includes('woman')){
-    message.channel.send("<@816431513792675860>");
-} if(message.content.includes('Woman')){
-    message.channel.send("<@816431513792675860>");
-} if(message.content.includes('WOMAN')){
-    message.channel.send("<@816431513792675860>");
-}
+    //Makes all messages content in to lowercase so we don't have to do things like oVo Ovo ovO
+    let lowmsg = message.content.toLowerCase()
 
 
-if(command === 'hi'){
-    message.reply('kys')
-} if(command === 'hello'){
-    message.reply('kys');
-} if(command === 'wassup'){
-    message.reply('no one wants to talk to you. kys <3');
-} if(message.content.includes('gg')){
-    message.reply('GUN GANGGGGGGG');
-} if(command === 'hey'){
-    message.reply('kys');
-} if(message.content.includes('!d bump')){
-    message.reply("if you bumped: thanks :heart: and if you didn't: kys");
-}
+    //Disable bots being able to loop this shit cause its gay.
+    if(message.author.bot){
+        return console.log("No :)")
+    }
 
- if(command === 'kys'){
-     message.reply('kys');
-    } if(command === 'qwq'){
-        message.channel.send('kys');
-    } if(command === 'T-T'){
-        message.channel.send('kys');
-    } if(command === 'ovo'){
-        message.channel.send('kys');
-    } if(command === 'ÚwÚ'){
-        message.channel.send('kys');
-    } if(command === 'uvu'){
-        message.channel.send('kys');
-    } if(command === 'uvu.'){
-        message.channel.send('kys');
-    } if(command === 'ovo.'){
-        message.channel.send('kys');
-    } if(command === 'uwu.'){
-        message.channel.send('kys');
-    } if(command === 'owo.'){
-        message.channel.send('kys');
-    } if(command === 't-t'){
-        message.channel.send('kys');
-    } if(command === 'tvt'){
-        message.channel.send('kys');
-    } if(command === '.owo'){
-        message.channel.send('kys');
-    } if(command === '.uwu'){
-        message.channel.send('kys');
-    } if(command === '.t-t'){
-        message.channel.send('kys');
-    } if(command === '.tvt'){
-        message.channel.send('kys');
-    } if(command === '"owo"'){
-        message.channel.send('kys');
-    } if(command === '~owo~'){
-        message.channel.send('kys');
-    } if(command === '~owo'){
-        message.channel.send('kys');
-    } if(command === 'owo~'){
-        message.channel.send('kys');
-    } if(command === '~uwu~'){
-        message.channel.send('kys');
-    } if(command === '~uwu'){
-        message.channel.send('kys');
-    } if(command === 'uwu~'){
-        message.channel.send('kys');
-    } if(command === '"uwu"'){
-        message.channel.send('kys');
-    } if(command === 'cunt'){
-        message.channel.send(`we know you are ${message.author.username} and don't forget to kys <3`);
-    } if(command === 'fuck'){
-        message.channel.send('fuck me daddy <3');
-    } if(command === 'no'){
-        message.channel.send('no');
-    } if(command === 'yes'){
-        message.channel.send('indeed');
-    } if(command === 'yeah'){
-        message.channel.send('agreed');  
-    } if(message.content.includes('furry')) {
-        message.channel.send('kys');
-    } if(message.content.includes('uwu')) {
-        message.channel.send('kys');
-    }  if(message.content.includes('Uwu')) {
-        message.channel.send('kys');
-    } if(message.content.includes('uwU')) {
-        message.channel.send('kys');
-    }  if(message.content.includes('UWU')) {
-        message.channel.send('kys');
-    } if(message.content.includes('owo')) {
-        message.channel.send('kys');
-    }  if(message.content.includes('Owo')) {
-        message.channel.send('kys');
-    } if(message.content.includes('owO')) {
-        message.channel.send('kys');
-    }  if(message.content.includes('OWO')) {
-        message.channel.send('kys');
-    } if(message.content.includes('sex')) {
-        message.reply('did you say sex? no one would fuck you lmao');
-    } if(message.content.includes('child')) {
-        message.reply('kids deserver to die');
-    } if(command === 'a!leaderboards'){
-        message.reply("it's `a!leaderboard`");
-    } if(message.content.includes('help')){
-        message.channel.send('help? no. :heart:');
-    } if(message.content.includes('xd')){
-        message.reply("I'll fuck your mom. will that be xd too?")
-    } if(message.content.includes('Xd')){
-        message.reply("I'll fuck your mom. will that be xd too?")
-    } if(message.content.includes('xD')){
-        message.reply("I'll fuck your mom. will that be xd too?")
-    } if(message.content.includes('XD')){
-        message.reply("I'll fuck your mom. will that be xd too?")
-    } if(message.content.includes('Finland')){
-        message.channel.send('FINLAND :muscle: :flag_fi:');
-    } if(message.content.includes('finland')){
-        message.channel.send('FINLAND :muscle: :flag_fi:');
-    } if(message.content.includes('Finnish')){
-        message.channel.send('FINLAND :muscle: :flag_fi:');
-    } if(message.content.includes('finnish')){
-        message.channel.send('FINLAND :muscle: :flag_fi:');
-    } if(command === 'retard'){
-        message.channel.send('yup. kys :heart:');
-    } if(message.content.includes('usa')){
-        message.reply(":flag_us: they should go to hell")
-    } if(message.content.includes('Usa')){
-        message.reply(":flag_us: they should go to hell")
-    } if(message.content.includes('USA')){
-        message.reply(":flag_us: they should go to hell")
-    } if(command === 'gay'){
-        message.channel.send("it's ok to be gay only if you like femboys")
-    }  if(message.content.includes('que')){
-        message.channel.send('que?');
-    } if(message.content.includes('Que')){
-        message.channel.send('que?');
-    } 
+    //Whenever this is called with kys() it sends kys in chat. Very simple :)
+    function kys(){
+        message.reply("kys")
+    }
 
-});
+    //Here we declare everything thats "kyssable" meaning everything the bot replies "kys" to is stored here. And we can reference this variable at any point, with something like kysvar[0] to get owo and kysvar[1] to get uwu. Very simple variable declaring which is useful in many cases :)
+    //When you're adding something here, make sure to type it in lowercase, otherwise it will be no function!!!!!!!!!
+    let kysvar = ['owo', 'uwu', 'qwq', 'hello', 'hey', 'kys', 't-t', 'ovo', '"owo"', 'cunt', 'retard']
+
+    //Sanity check.
+    console.log(lowmsg)
+
+    //Check if anything in the message is in kysvar, if so call the function kys()
+    //Sidenote, there's probably a million other ways that are more efficient to do this, but I really could care less since this is just a discord bot.
+    //And it works sooo. :P
+    if(lowmsg.includes(kysvar[0]) || lowmsg.includes(kysvar[1]) || lowmsg.includes(kysvar[2]) || lowmsg.includes(kysvar[3]) || lowmsg.includes(kysvar[4]) || lowmsg.includes(kysvar[5]) || lowmsg.includes(kysvar[6]) || lowmsg.includes(kysvar[7]) || lowmsg.includes(kysvar[8]) || lowmsg.includes(kysvar[9]) || lowmsg.includes(kysvar[10]) || lowmsg.includes(kysvar[11])){
+        kys()
+    }
+
+    //Check if the user said woman, then try to ping various other people. (Only had vodkas id didnt know who else yall ping)
+    if(lowmsg.includes("woman")){
+    return message.channel.send(`OONGA! WOMAN OONGA! ${message.author} CALLS FOR THE FEMALE! <@700051543998595094>!!!!!!`)
+    }
+
+    //I really like this one LOL
+    if(lowmsg.includes("a!leaderboards")){
+        return message.reply("Oi cunt, it's 'a!leaderboard' not what you sent :rolling_eyes:")
+    }
+
+    if(lowmsg.includes("china") || lowmsg.includes("america") || lowmsg.includes("north korea")){ 
+        return message.reply(":flag_kp: :flag_us: :flag_cn: are bad countries! We don't support them!")
+    }
+
+    if(lowmsg.includes("finland") || lowmsg.includes("perkele")){
+        message.reply("SUOMI MAINITTU?!")
+        return message.channel.send("FINLAND :muscle: :flag_fi:")
+    }
+
+    if(lowmsg.includes("xd")){
+        return message.reply("I'll fuck your mom too, ya think that'll be so 'xd' worthy?")
+    }
+
+    //I added an invite link feature to the german server shoot.
+    if(lowmsg.includes("femboy invite")){
+        return message.reply("Here's an invite to the server, https://discord.gg/jzUWQQ9jjZ")
+    }
+
+    if(lowmsg.includes("nigger") || lowmsg.includes("nigga")){
+        return message.reply("Whos neighbor? Or did I hear a different kind of n-word...")
+    }
+
+    //If it finds nothing, just log to console and carry on our lives.
+    else{
+        console.log("-*-*-Nothing found, let's head back to safety boys!-*-*-")
+    }
+
+})
 
 
 client.login('NzU3MjY4MTQ4NTc0NDg2NjU5.X2d66w.uyE3yrYeXYvNcTndNdRIEZjrPBM')
