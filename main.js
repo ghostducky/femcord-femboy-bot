@@ -54,7 +54,7 @@ client.on('message', message => {
 
     //Here we declare everything thats "kyssable" meaning everything the bot replies "kys" to is stored here. And we can reference this variable at any point, with something like kysvar[0] to get owo and kysvar[1] to get uwu. Very simple variable declaring which is useful in many cases :)
     //When you're adding something here, make sure to type it in lowercase, otherwise it will be no function!!!!!!!!!
-    let kysvar = ['owo', 'uwu', 'qwq', 'hello', 'kys', 't-t', 'ovo', 'cunt', 'retard', 'vagege']
+    let kysvar = ['owo', 'uwu', 'qwq', 'hello', 'kys', 't-t', 'ovo', 'cunt', 'retard', 'vagege', ' ']
 
     //Check if anything in the message is in kysvar, if so call the function kys()
     //Sidenote, there's probably a million other ways that are more efficient to do this, but I really could care less since this is just a discord bot.
@@ -65,12 +65,12 @@ client.on('message', message => {
 
     //Check if the user said woman, then try to ping various other people. (Only had vodkas id didnt know who else yall ping)
     if(lowmsg.includes("woman")){
-        return message.channel.send(`OONGA! WOMAN OONGA! ${message.author} CALLS FOR THE FEMALE! <@700051543998595094>!!!!!!`)
+        return message.channel.send(`OONGA! WOMAN OONGA! ${message.author} CALLS FOR THE FEMALE!!!!!!! <@816431513792675860> YOU'RE NEEDED!!!`)
     }
 
     //I really like this one LOL
     if(lowmsg.includes("a!leaderboards")){
-        return message.reply("Oi cunt, it's 'a!leaderboard' not what you sent :rolling_eyes:")
+        return message.reply("Oi cunt, it's ``a!leaderboard`` not what you sent :rolling_eyes:")
     }
     
     if(lowmsg.includes("china") || lowmsg.includes("america") || lowmsg.includes("north korea")){ 
@@ -90,8 +90,8 @@ client.on('message', message => {
     if(lowmsg.includes("femboy invite")){
         return message.reply("Here's an invite to the server, https://discord.gg/jzUWQQ9jjZ")
     }
-
-    if(lowmsg.includes("nigger") || lowmsg.includes("nigga")){
+    
+    if(lowmsg.includes("nigger") || lowmsg.includes("nigga") || lowmsg.includes("nlgga") || lowmsg.includes("n¡gga")){
         return message.reply("Whos neighbor? Or did I hear a different kind of n-word...")
     }
   
