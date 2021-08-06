@@ -91,7 +91,7 @@ client.on('message', message => {
         return message.reply("Here's an invite to the server, https://discord.gg/jzUWQQ9jjZ")
     }
     
-    if(lowmsg.includes("nigger") || lowmsg.includes("nigga") || lowmsg.includes("nlgga") || lowmsg.includes("n¡gga") || lowmsg.includes("neekeri") || lowmsg.includes("nekru")){
+    if(lowmsg.includes("nigger") || lowmsg.includes("nigga") || lowmsg.includes("nlgga") || lowmsg.includes("n¡gga") || lowmsg.includes("neekeri") || lowmsg.includes("nekru") || lowmsg.includes("nlgger")){
         return message.reply("Whos neighbor? Or did I hear a different kind of n-word...")
     }
   
