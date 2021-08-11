@@ -59,13 +59,13 @@ client.on('message', message => {
     //Check if anything in the message is in kysvar, if so call the function kys()
     //Sidenote, there's probably a million other ways that are more efficient to do this, but I really could care less since this is just a discord bot.
     //And it works sooo. :P
-    if(lowmsg.includes(kysvar[0]) || lowmsg.includes(kysvar[1]) || lowmsg.includes(kysvar[2]) || lowmsg.includes(kysvar[3]) || lowmsg.includes(kysvar[4]) || lowmsg.includes(kysvar[5]) || lowmsg.includes(kysvar[6]) || lowmsg.includes(kysvar[7]) || lowmsg.includes(kysvar[8]) || lowmsg.includes(kysvar[9])){
+    if(lowmsg.includes(kysvar[0]) || lowmsg.includes(kysvar[1]) || lowmsg.includes(kysvar[2]) || lowmsg.includes(kysvar[3]) || lowmsg.includes(kysvar[4]) || lowmsg.includes(kysvar[5]) || lowmsg.includes(kysvar[6]) || lowmsg.includes(kysvar[7]) || lowmsg.includes(kysvar[8]) || lowmsg.includes(kysvar[9])) {
         kys()
     }
 
     //Check if the user said woman, then try to ping various other people. (Only had vodkas id didnt know who else yall ping)
     if(lowmsg.includes("woman")){
-        return message.channel.send(`OONGA! WOMAN OONGA! ${message.author} CALLS FOR THE FEMALE!!!!!!! <@816431513792675860> YOU'RE NEEDED!!!`)
+        return message.channel.send(`OONGA! WOMAN OONGA! ${message.author} CALLS FOR THE FEMALE!!!!!!! <@819357283888136233> YOU'RE NEEDED!!!`)
     }
 
     //I really like this one LOL
